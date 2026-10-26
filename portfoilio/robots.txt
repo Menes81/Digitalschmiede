@@ -1,0 +1,5 @@
+# Privat-Modus: Die Seite darf gelesen, aber nicht in Suchergebnissen angezeigt werden.
+# Das "noindex" steht in index.html und in _headers. Absichtlich kein "Disallow",
+# sonst sieht Google das noindex nicht und kann die Adresse trotzdem listen.
+User-agent: *
+Allow: /
