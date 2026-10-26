@@ -440,7 +440,7 @@ select.try-input{appearance:none;-webkit-appearance:none;cursor:pointer;padding-
 .example{padding-block:0}
 .ex-badge{display:inline-flex;align-items:center;gap:10px;font-weight:700;background:var(--surface);padding:10px 16px;border-radius:14px;align-self:flex-start;margin:0 0 clamp(24px,4vh,48px)}
 .ex-badge::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--gold);flex:none}
-.examples-head{margin-bottom:clamp(32px,5vh,56px)}
+.examples-title{margin-bottom:clamp(20px,3vh,32px)}
 
 .progress{position:fixed;top:0;left:0;right:0;height:4px;z-index:40;pointer-events:none}
 .progress i{display:block;height:100%;background:var(--gold);transform:scaleX(0);transform-origin:left}
@@ -603,20 +603,15 @@ select.try-input{appearance:none;-webkit-appearance:none;cursor:pointer;padding-
 
 <!-- 5. BEISPIELE -->
 <section class="slide wrap" id="beispiele" data-title="Beispiel Friseur" aria-labelledby="ex-title">
-  <div class="examples-head">
-    <div>
-      <h2 id="ex-title" class="rv">So könnte Ihre Seite aussehen</h2>
-    </div>
-    <div class="rv" style="--i:1">
-      <p class="note-strong">Beispiel-Entwürfe, keine echten Kunden</p>    </div>
-  </div>
+  <h2 id="ex-title" class="examples-title rv">So könnte Ihre Seite aussehen</h2>
+  <p class="ex-badge rv" style="--i:1">Beispiel-Entwurf, kein echter Kunde</p>
 
   <article class="example t-barber">
     <div class="ex-visual rv">
       <div class="browser" aria-hidden="true">
-        <div class="browser-bar"><i></i><i></i><i></i><span>barbier-lindenhof.de</span></div>
+        <div class="browser-bar"><i></i><i></i><i></i><span>barbier-xy.de</span></div>
         <div class="site"><div class="site-page">
-          <div class="site-nav"><b>BARBIER LINDENHOF</b><span><span>Preise</span><span>Galerie</span><span>Anfahrt</span><span>Termin</span></span></div>
+          <div class="site-nav"><b>BARBIER XY</b><span><span>Preise</span><span>Galerie</span><span>Anfahrt</span><span>Termin</span></span></div>
           <div class="site-hero">
             <div class="site-copy">
               <strong>Sauberer Schnitt. Ohne Wartezeit.</strong>
@@ -654,14 +649,14 @@ select.try-input{appearance:none;-webkit-appearance:none;cursor:pointer;padding-
             </div>
           </div>
           <div class="site-cta"><strong>Heute noch frei?</strong><span>Jetzt Termin buchen</span></div>
-          <div class="site-foot"><span>© Barbier Lindenhof</span><span>Impressum · Datenschutz</span></div>
+          <div class="site-foot"><span>© Barbier XY</span><span>Impressum · Datenschutz</span></div>
         </div></div>
       </div>
       <div class="phone" aria-hidden="true">
         <div class="phone-screen"><div class="phone-page">
           <div class="phone-notch"></div>
           <div class="phone-img"><img loading="lazy" src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=500&q=70" alt="" width="500" height="500"></div>
-          <div class="phone-body"><div class="phone-name">Barbier Lindenhof</div><div class="phone-row"><span>Heute</span><span>9–19 Uhr</span></div><div class="phone-btn">Termin buchen</div></div>
+          <div class="phone-body"><div class="phone-name">Barbier XY</div><div class="phone-row"><span>Heute</span><span>9–19 Uhr</span></div><div class="phone-btn">Termin buchen</div></div>
           <div class="p-sec tone"><span class="p-h">Preise</span><div class="p-row"><span>Herrenschnitt</span><span>25 €</span></div><div class="p-row"><span>Schnitt &amp; Bart</span><span>38 €</span></div><div class="p-row"><span>Bart trimmen</span><span>15 €</span></div><div class="p-row"><span>Kinderschnitt</span><span>18 €</span></div></div>
           <div class="p-sec"><span class="p-h">Galerie</span><div class="p-gal"><img loading="lazy" src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=300&q=60" alt=""><img loading="lazy" src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=300&q=60" alt=""></div></div>
           <div class="p-sec tone"><span class="p-h">Anfahrt</span><div class="p-row"><span>Lindenstraße 12</span><span>Hanau</span></div><div class="p-map"><svg viewBox="0 0 100 50" preserveAspectRatio="none"><path d="M0 34L100 22M28 0L40 50M72 0L64 50" stroke="currentColor" stroke-opacity=".25" stroke-width="3" fill="none"/><circle cx="51" cy="27" r="4.5" fill="var(--p-accent)"/></svg></div></div>
@@ -669,7 +664,7 @@ select.try-input{appearance:none;-webkit-appearance:none;cursor:pointer;padding-
       </div>
     </div>
     <div class="ex-text">
-      <h3 class="rv">Barbier Lindenhof</h3>
+      <h3 class="rv">Barbier XY</h3>
       <p class="kind rv" style="--i:1">Friseur · Beispiel-Entwurf</p>
       <p class="ex-pitch rv" style="--i:1">Kantig wie ein Ladenschild: Nachtblau, Gold und eine schmale, kräftige Schrift.</p>
       <div class="ex-style rv" style="--i:2" aria-hidden="true"><i></i><i></i><i></i><span>Aa</span></div>
@@ -689,9 +684,9 @@ select.try-input{appearance:none;-webkit-appearance:none;cursor:pointer;padding-
   <article class="example flip t-cafe">
     <div class="ex-visual rv">
       <div class="browser" aria-hidden="true">
-        <div class="browser-bar"><i></i><i></i><i></i><span>kaffeehaus-fuenfzehn.de</span></div>
+        <div class="browser-bar"><i></i><i></i><i></i><span>cafe-xy.de</span></div>
         <div class="site"><div class="site-page">
-          <div class="site-nav"><b>Kaffeehaus Fünfzehn</b><span><span>Karte</span><span>Frühstück</span><span>Anfahrt</span><span>Reservieren</span></span></div>
+          <div class="site-nav"><b>Café XY</b><span><span>Karte</span><span>Frühstück</span><span>Anfahrt</span><span>Reservieren</span></span></div>
           <div class="site-hero">
             <div class="site-copy">
               <strong>Frühstück bis 14 Uhr.</strong>
@@ -705,7 +700,7 @@ select.try-input{appearance:none;-webkit-appearance:none;cursor:pointer;padding-
           <div class="site-sec">
             <span class="site-h">Unsere Karte</span>
             <div class="site-prices">
-              <div><span>Frühstück „Fünfzehn“<small>Brötchen, Ei, Käse, Obst</small></span><span>12,90 €</span></div>
+              <div><span>Frühstück klassisch<small>Brötchen, Ei, Käse, Obst</small></span><span>12,90 €</span></div>
               <div><span>Cappuccino<small>Bohnen aus der Region</small></span><span>3,40 €</span></div>
               <div><span>Kuchen des Tages<small>hausgemacht</small></span><span>3,90 €</span></div>
               <div><span>Mittagstisch<small>wechselt wöchentlich</small></span><span>9,50 €</span></div>
@@ -729,14 +724,14 @@ select.try-input{appearance:none;-webkit-appearance:none;cursor:pointer;padding-
             </div>
           </div>
           <div class="site-cta"><strong>Platz für Sie frei halten?</strong><span>Tisch reservieren</span></div>
-          <div class="site-foot"><span>© Kaffeehaus Fünfzehn</span><span>Impressum · Datenschutz</span></div>
+          <div class="site-foot"><span>© Café XY</span><span>Impressum · Datenschutz</span></div>
         </div></div>
       </div>
       <div class="phone" aria-hidden="true">
         <div class="phone-screen"><div class="phone-page">
           <div class="phone-notch"></div>
           <div class="phone-img"><img loading="lazy" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=500&q=70" alt="" width="500" height="500"></div>
-          <div class="phone-body"><div class="phone-name">Kaffeehaus Fünfzehn</div><div class="phone-row"><span>Heute</span><span>8–18 Uhr</span></div><div class="phone-btn">Tisch reservieren</div></div>
+          <div class="phone-body"><div class="phone-name">Café XY</div><div class="phone-row"><span>Heute</span><span>8–18 Uhr</span></div><div class="phone-btn">Tisch reservieren</div></div>
           <div class="p-sec tone"><span class="p-h">Karte</span><div class="p-row"><span>Frühstück</span><span>12,90 €</span></div><div class="p-row"><span>Cappuccino</span><span>3,40 €</span></div><div class="p-row"><span>Kuchen</span><span>3,90 €</span></div><div class="p-row"><span>Mittagstisch</span><span>9,50 €</span></div></div>
           <div class="p-sec"><span class="p-h">Galerie</span><div class="p-gal"><img loading="lazy" src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=300&q=60" alt=""><img loading="lazy" src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=300&q=60" alt=""></div></div>
           <div class="p-sec tone"><span class="p-h">Anfahrt</span><div class="p-row"><span>Marktplatz 15</span><span>Gelnhausen</span></div><div class="p-map"><svg viewBox="0 0 100 50" preserveAspectRatio="none"><path d="M0 18L100 30M35 0L30 50M78 0L84 50" stroke="currentColor" stroke-opacity=".22" stroke-width="3" fill="none"/><circle cx="46" cy="24" r="4.5" fill="var(--p-accent)"/></svg></div></div>
@@ -744,7 +739,7 @@ select.try-input{appearance:none;-webkit-appearance:none;cursor:pointer;padding-
       </div>
     </div>
     <div class="ex-text">
-      <h3 class="rv">Kaffeehaus Fünfzehn</h3>
+      <h3 class="rv">Café XY</h3>
       <p class="kind rv" style="--i:1">Café · Beispiel-Entwurf</p>
       <p class="ex-pitch rv" style="--i:1">Warm wie ein Milchkaffee: Creme, Espresso-Braun und eine breite, gemütliche Schrift.</p>
       <div class="ex-style rv" style="--i:2" aria-hidden="true"><i></i><i></i><i></i><span>Aa</span></div>
@@ -764,9 +759,9 @@ select.try-input{appearance:none;-webkit-appearance:none;cursor:pointer;padding-
   <article class="example t-beauty">
     <div class="ex-visual rv">
       <div class="browser" aria-hidden="true">
-        <div class="browser-bar"><i></i><i></i><i></i><span>studio-seidig.de</span></div>
+        <div class="browser-bar"><i></i><i></i><i></i><span>kosmetik-xy.de</span></div>
         <div class="site"><div class="site-page">
-          <div class="site-nav"><b>Studio Seidig</b><span><span>Behandlungen</span><span>Über mich</span><span>Anfahrt</span><span>Termin</span></span></div>
+          <div class="site-nav"><b>Kosmetik XY</b><span><span>Behandlungen</span><span>Über mich</span><span>Anfahrt</span><span>Termin</span></span></div>
           <div class="site-hero">
             <div class="site-copy">
               <strong>Zeit für Ihre Haut.</strong>
@@ -804,14 +799,14 @@ select.try-input{appearance:none;-webkit-appearance:none;cursor:pointer;padding-
             </div>
           </div>
           <div class="site-cta"><strong>Gönnen Sie sich eine Pause.</strong><span>Per WhatsApp anfragen</span></div>
-          <div class="site-foot"><span>© Studio Seidig</span><span>Impressum · Datenschutz</span></div>
+          <div class="site-foot"><span>© Kosmetik XY</span><span>Impressum · Datenschutz</span></div>
         </div></div>
       </div>
       <div class="phone" aria-hidden="true">
         <div class="phone-screen"><div class="phone-page">
           <div class="phone-notch"></div>
           <div class="phone-img"><img loading="lazy" src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=500&q=70" alt="" width="500" height="500"></div>
-          <div class="phone-body"><div class="phone-name">Studio Seidig</div><div class="phone-row"><span>Termine</span><span>nach Absprache</span></div><div class="phone-btn">Termin anfragen</div></div>
+          <div class="phone-body"><div class="phone-name">Kosmetik XY</div><div class="phone-row"><span>Termine</span><span>nach Absprache</span></div><div class="phone-btn">Termin anfragen</div></div>
           <div class="p-sec tone"><span class="p-h">Behandlungen</span><div class="p-row"><span>Gesicht 60 Min.</span><span>65 €</span></div><div class="p-row"><span>Anti-Aging</span><span>85 €</span></div><div class="p-row"><span>Maniküre</span><span>30 €</span></div><div class="p-row"><span>Pediküre</span><span>38 €</span></div></div>
           <div class="p-sec"><span class="p-h">Einblicke</span><div class="p-gal"><img loading="lazy" src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=300&q=60" alt=""><img loading="lazy" src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=300&q=60" alt=""></div></div>
           <div class="p-sec tone"><span class="p-h">Anfahrt</span><div class="p-row"><span>Bahnhofstraße 8</span><span>Maintal</span></div><div class="p-map"><svg viewBox="0 0 100 50" preserveAspectRatio="none"><path d="M0 26L100 26M22 0L30 50M60 0L58 50" stroke="currentColor" stroke-opacity=".22" stroke-width="3" fill="none"/><circle cx="58" cy="26" r="4.5" fill="var(--p-accent)"/></svg></div></div>
@@ -819,7 +814,7 @@ select.try-input{appearance:none;-webkit-appearance:none;cursor:pointer;padding-
       </div>
     </div>
     <div class="ex-text">
-      <h3 class="rv">Studio Seidig</h3>
+      <h3 class="rv">Kosmetik XY</h3>
       <p class="kind rv" style="--i:1">Kosmetik · Beispiel-Entwurf</p>
       <p class="ex-pitch rv" style="--i:1">Ruhig wie das Studio selbst: Salbeigrün, zartes Rosé und eine leichte, offene Schrift.</p>
       <div class="ex-style rv" style="--i:2" aria-hidden="true"><i></i><i></i><i></i><span>Aa</span></div>
